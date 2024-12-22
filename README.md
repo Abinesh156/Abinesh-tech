@@ -1,8 +1,8 @@
-console.log("👋 Hello there! Let's meet Thinesh Rasla!");
+console.log("👋 Hello there! Let's meet abinesh!");
 
 class Rasla {
   constructor() {
-    this.username = "0xrasla";
+    this.username = "abinesh156";
     this.name = "Thinesh Rasla";
     this.position = "Senior Software Engineer";
     this.blog = "medium.com/@raslarasla";
