@@ -1,21 +1,16 @@
 pipeline {
     agent any
-
-
     stages {
-        stage('Hello') {
-            when {
-                branch 'main'
-            }
+        stage('Debug') {
             steps {
-                echo 'Hello, World from Jenkins on main branch!'
+                echo "Current branch: ${env.BRANCH_NAME}"
             }
         }
-    }
-
-    post {
-        always {
-            echo 'Pipeline finished!'
+        stage('Hello') {
+            when { branch 'main' }
+            steps {
+                echo 'Hello World from main branch!'
+            }
         }
     }
 }
