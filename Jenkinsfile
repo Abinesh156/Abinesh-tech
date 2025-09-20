@@ -7,7 +7,7 @@ pipeline {
                 branch 'main'
             }
             steps {
-                echo 'Hello, World from Jenkins! test'
+                echo 'Hello, World from Jenkins! test some word'
             }
         }
     }
