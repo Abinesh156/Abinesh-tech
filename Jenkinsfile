@@ -1,13 +1,14 @@
 pipeline {
     agent any
 
+
     stages {
         stage('Hello') {
-             when {
+            when {
                 branch 'main'
             }
             steps {
-                echo 'Hello, World from Jenkins! test some word'
+                echo 'Hello, World from Jenkins on main branch!'
             }
         }
     }
